@@ -1,0 +1,17 @@
+<p>Search Movie by ID</p>
+<input [(ngModel)]="movieId">
+<app-show-data [id]="movieId" (obj)="getData($event)"></app-show-data>
+<table style="width: 100%;">
+     <tr>
+         <th>Movie ID</th> 
+         <th>Movie Name</th> 
+         <th>Movie Type</th> 
+         <th>Movie Price</th> 
+     </tr>
+     <tr>
+          <td>{{Movieid}}</td>
+          <td>{{NameMovie}}</td>
+          <td>{{TypeMovie}}</td>
+          <td>{{MoviePrice}}</td>
+     </tr>
+</table>
